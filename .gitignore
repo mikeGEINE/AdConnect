@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Protection of codes for authentication
+Back/adconnect/src/main/resources/application.yml
