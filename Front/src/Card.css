@@ -7,7 +7,7 @@
     transition: transform 100ms ease-in;
     cursor: pointer;
 }
-
+    
 .card:hover {
     transform: scale(1.07);
 }
@@ -30,8 +30,8 @@
     font-size: 18px;
     font-weight: 600;
 }
-
-.card__info > h4 {
+    
+    .card__info > h4 {
     font-size: 14px;
     font-weight: 300;
     margin-top: 8px;
