@@ -4,10 +4,6 @@ import './Banner.css';
 import Banner from './Banner'
 import Card from './Card'
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
-import Platforms from './Platforms' 
-
 function Home() {
   return (
     <div className="home">
@@ -33,6 +29,7 @@ function Home() {
           price="100$"
         />
       </div>
+      <a href="/ads">Посмотреть все</a>
       <div className='home__section'>
       <Card
         src="https://avatars.mds.yandex.net/get-zen_doc/1856484/pub_5dd240.."
@@ -50,9 +47,6 @@ function Home() {
         description="Hello world"
       />
       </div>
-      <Router>
-        <Route exact path="/platforms" component={Platforms} />
-      </Router>
   </div>
   );
 }
