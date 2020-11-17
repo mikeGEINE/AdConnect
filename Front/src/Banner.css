@@ -1,0 +1,14 @@
+.banner {
+    background: url("https://wallbox.ru/resize/1440x900/wallpapers/main2/201727/material123456.png") center center;
+    height: 51vh;
+    position: relative;
+}
+
+.banner__info {
+    color: white;
+    padding-top: 25vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    width: 60%;
+}

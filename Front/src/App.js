@@ -37,6 +37,8 @@ function App() {
       </div>
     </Router>
       
+      <Header /> 
+      <Home />
       {/* Home */}
           {/* Header */}
 
