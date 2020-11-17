@@ -8,13 +8,12 @@ import { Avatar } from "@material-ui/core";
 function Header() {
   return (
     <div className="header">
-        <img 
+        {/* <img 
             className = "header_icon"
-            //src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
-            src="https://psv4.userapi.com/c856432/u170724277/docs/d7/9760942937cd/AdConnect.png?extra=Yaqp-WrKy4StchJ1iEjGruzMixJZBJuQ4Ud0wuSoPIZtnejWA4JWmQN6T5XXGoDxQSbFtQXwHCBi-npkkOsclSqjDa4vFJbD5Qr9wu5wTLfz55LVtcho8CNA6zqjHxJBCMDwkiDCg97llRLe8orrQIel9w"
+            
             alt=""
-        />
-
+        /> */}
+        <img src="image/AdConnect.png" />
         <div className='header_center'>
             <input type="text" />
             <SearchIcon />
