@@ -8,8 +8,8 @@ import {
   useParams
 } from "react-router-dom";
 import './App.css';
-import Home from './Home'
-import Form from './Form'
+import Home from './Home';
+import NameForm from "./Form";
 import Header from './Header'
 import Cardpage from './Cardpage'
 
@@ -39,6 +39,7 @@ function App() {
       
       <Header /> 
       <Home />
+      {/* <NameForm /> */}
       {/* Home */}
           {/* Header */}
 
