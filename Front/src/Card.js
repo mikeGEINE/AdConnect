@@ -13,6 +13,6 @@ function Card({id, src, title, description, price}) {
         </div>
     </Link>
   );
-}
-
+  }
+  
 export default Card

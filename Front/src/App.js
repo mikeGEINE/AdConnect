@@ -10,8 +10,12 @@ import {
 import './App.css';
 import Home from './Home';
 import NameForm from "./Form";
-import Header from './Header'
 import Cardpage from './Cardpage'
+import Header from './Header.js'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+
+import Platforms from './Platforms' 
+import Ads from './Ads' 
 
 function App() {
   return (
@@ -24,11 +28,14 @@ function App() {
         <Home />
         <Form /> */}
         <Switch>
-          <Route path="/about">
-            <About />
+        <Route path="/platforms">
+            <Platforms />
           </Route>
           <Route path="/card/:id"> 
             <Cardpage />
+          </Route>
+          <Route path="/ads">
+            <Ads />
           </Route>
           <Route path="/" exact> 
             <Home />

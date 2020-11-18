@@ -4,7 +4,6 @@ import './Banner.css';
 import Banner from './Banner'
 import Card from './Card'
 
-
 function Home() {
   return (
     <div className="home">
