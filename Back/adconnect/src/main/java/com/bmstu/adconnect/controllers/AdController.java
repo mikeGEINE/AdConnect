@@ -19,7 +19,7 @@ public class AdController {
     @Autowired
     private AdRepository adRepository;
 
-    @GetMapping("/Ad/{adId}")
+    @GetMapping("/ad/{adId}")
     public ResponseEntity<Ad> getAd(@PathVariable Integer adId) {
         Optional<Ad> ad = adRepository.findById(adId);
         if (ad.isPresent()) {
@@ -29,7 +29,7 @@ public class AdController {
         }
     }
 
-    @PostMapping("/Ad")
+    @PostMapping("/ad")
     public ResponseEntity<Ad> addAd(@RequestParam Integer adId, @RequestParam String headline, @RequestParam Integer coast, @RequestParam String description, @RequestParam String contacts, @RequestParam String audience, @RequestParam String format, @RequestParam String platform){
         var ad = new Ad();
         ad.setHeadline(headline);
