@@ -1,6 +1,6 @@
-package com.bmstu.addconnect.Repository;
+package com.bmstu.adconnect.repositories;
 
-import com.bmstu.addconnect.Ad;
+import com.bmstu.adconnect.models.Ad;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

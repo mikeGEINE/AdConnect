@@ -1,4 +1,4 @@
-package com.bmstu.addconnect;
+package com.bmstu.adconnect.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
