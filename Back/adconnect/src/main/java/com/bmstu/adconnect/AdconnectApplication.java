@@ -16,7 +16,7 @@ public class AdconnectApplication extends WebSecurityConfigurerAdapter{
     	// @formatter:off
         http
             .authorizeRequests(a -> a
-                .antMatchers("/", "/error", "/webjars/**").permitAll()
+                .antMatchers("/", "/error", "/webjars/**", "/ad/**").permitAll()
                 .anyRequest().authenticated()
 			)
 			.logout(l -> l
