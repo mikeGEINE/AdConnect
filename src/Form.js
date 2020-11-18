@@ -1,43 +1,50 @@
 import React from 'react';
 
-function Home() {
-    // state ={
-    //     inputText: '',
-    //     textareaText: '',
-    // }
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {title: '',
+                  description: ''};
 
-    // handleInputChange = ({targer: {value}}) => {
-    //     this.setState({
-    //         inputText: value
-    //     })
-    // }
 
-    // handleTextareaChange = ({targer: {value}}) => {
-    //     this.setState({
-    //         textareaText: value
-    //     })
-    // }
-    // const {register, handleSubmit, errors} = 
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    // const onSubmit = date => {
-    //     console.log(date);
-    // }
-  return (
-    <form >
-        <label>
-            Name:
-            <input type="text" name="title" />
-        </label>
+  handleChange(event) {
+    const target = event.target;
+    const value =  target.value;
+    const name = target.name;
 
-        <label>
-            Name:
-            <input type="text" name="description"  />
-        </label>
-        <br />
+    this.setState({
+      [name]: value
+    });
+  }
 
-        <input type="submit" />
-    </form>
-  );
+  handleSubmit(event) {
+    alert('Отправленное заголовок: ' + this.state.title + '\nОтправленное описание: ' + this.state.description);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit} >
+          <label>
+              Введите заголовок рекламы:
+              <input type="text" name="title" value={this.state.title} onChange={this.handleChange} />
+          </label>
+          <br />
+          <label>
+              Введите подробное описание рекламы:
+              <input type="text" name="description" value={this.state.description} onChange={this.handleChange} />
+          </label>
+          <br />
+
+          <input type="submit" />
+      </form>
+    );
+  }
 }
 
-export default Home
+export default NameForm;
+
