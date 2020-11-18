@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: github-client-id
+            clientSecret: github-client-secret
+  datasource:
+    url: jdbc:postgresql://localhost:5432/adconnect
+    username: adconnect_user
+    password: adconnect
+  jpa:
+    hibernate:
+      ddl-auto: update
