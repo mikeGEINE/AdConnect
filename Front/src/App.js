@@ -12,7 +12,6 @@ import Home from './Home';
 import NameForm from "./Form";
 import Header from './Header'
 import Cardpage from './Cardpage'
-import Platforms from './Platforms' 
 import Ads from './Ads' 
 
 function App() {
