@@ -7,14 +7,14 @@
     background-color: white;
     z-index: 100;
     width: 100%;
-    height: 65px;
 }
 
 
 .header_icon {
     object-fit: contain;
-    height: 70%;
+    height: 70px;
     margin-left: 20px;
+
 }
 
 .header_center {
@@ -41,9 +41,5 @@
     align-items: center;
     justify-content: space-between;
     width: 15vw;
-    margin-right: 40px;
-}
-
-button{
-    color: #3b91e2
+    margin-right: 80px;
 }

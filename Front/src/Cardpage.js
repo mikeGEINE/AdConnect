@@ -5,7 +5,7 @@ function Cardpage() {
     const params = useParams()
   return (
     <div>
-        <h1>Hello Cardpage {params.id} {params.title}</h1>
+        <h1>Hello Cardpage {params.id} </h1>
     </div>
   );
 }

@@ -4,10 +4,12 @@ import './Banner.css';
 import Banner from './Banner'
 import Card from './Card'
 
+
 function Home() {
   return (
     <div className="home">
         <Banner />
+        <a href="/ads">Посмотреть все</a>
         <div className='home__section'>
             <Card 
             id = {1}
@@ -31,24 +33,25 @@ function Home() {
             price="100$"
             />
         </div>
+        <a href="/platforms">Посмотреть все</a>
         <div className='home__section'>
             <Card 
             id = {4}
-            src="https://avatars.mds.yandex.net/get-zen_doc/1856484/pub_5dd240f4f2583c491d72fc39_5dd2416a08ffd321245c4749/scale_1200" 
-            title="Online Experiance"
-            description="Hello world"
+            src="https://i.ytimg.com/vi/kqf3JeTVwC0/maxresdefault.jpg" 
+            title="Youtube"
+            description="EeOneGuy	17.1 млн подписчиков"
             />
             <Card 
             id = {5}
-            src="https://avatars.mds.yandex.net/get-zen_doc/1856484/pub_5dd240f4f2583c491d72fc39_5dd2416a08ffd321245c4749/scale_1200" 
-            title="Online Experiance"
-            description="Hello world"
+            src="https://pbs.twimg.com/media/EI6oLOoUUAAyDVq.jpg" 
+            title="Instagram"
+            description="Мanzai 6 млн подписчиков"
             />
             <Card 
             id = {6}
-            src="https://avatars.mds.yandex.net/get-zen_doc/1856484/pub_5dd240f4f2583c491d72fc39_5dd2416a08ffd321245c4749/scale_1200" 
-            title="Online Experiance"
-            description="Hello world"
+            src="https://i.ytimg.com/vi/kqf3JeTVwC0/maxresdefault.jpg" 
+            title="Youtube"
+            description="ГЛЕНТ	5.9 млн подписчиков"
             />
         </div>
     </div>

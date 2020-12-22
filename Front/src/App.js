@@ -10,26 +10,18 @@ import {
 import './App.css';
 import Home from './Home';
 import NameForm from "./Form";
+import Header from './Header'
 import Cardpage from './Cardpage'
-import Header from './Header.js'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-
-import Platforms from './Platforms' 
 import Ads from './Ads' 
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <Router>
-      <div>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        {/* <Header />
-        <Home />
-        <Form /> */}
         <Switch>
-        <Route path="/platforms">
-            <Platforms />
+          <Route path="/form">
+            <NameForm />
           </Route>
           <Route path="/card/:id"> 
             <Cardpage />
@@ -41,11 +33,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
-      
-      <Header /> 
-      <Home />
       {/* <NameForm /> */}
       {/* Home */}
           {/* Header */}
@@ -65,11 +53,4 @@ function App() {
 }
 
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
-}
 export default App;

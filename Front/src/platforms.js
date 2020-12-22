@@ -1,12 +1,12 @@
-import React from 'react';
-// import './platforms.css';
+import React, { Component } from 'react';
+//import './Platforms.css';
 
-function Platforms() {
-  return (
-    <div className="hi">
-        <h1>Hi</h1>
-    </div>
-  );
+export default class Platforms extends Component {
+  render() {
+    return (
+      <div>
+        Все платформы
+      </div>
+    )
+  }
 }
-
-export default Platforms
